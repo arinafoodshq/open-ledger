@@ -1,0 +1,11 @@
+{
+  "name": "open-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An open, AI-assisted operational record standard for informal and small businesses.",
+  "scripts": {
+    "validate": "node scripts/validate.mjs"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "0.1.0",
+  "id": "evt_order_01",
+  "type": "order.created",
+  "occurred_at": "2026-11-17T08:00:00Z",
+  "recorded_at": "2026-11-17T08:01:12Z",
+  "subject": {
+    "business_id": "biz_example",
+    "location_id": "loc_ikeja",
+    "business_name": "Example Foods"
+  },
+  "actor": {
+    "id": "staff_ada",
+    "type": "owner",
+    "name": "Ada"
+  },
+  "counterparty": {
+    "id": "cust_01",
+    "type": "customer",
+    "name": "Ada Okafor"
+  },
+  "source": {
+    "channel": "whatsapp",
+    "evidence_id": "msg_01",
+    "raw_text": "12 cases of hot sauce, deliver Friday"
+  },
+  "currency": "NGN",
+  "amount_minor": 6000000,
+  "payload": {
+    "order_id": "ord_01",
+    "line_items": [
+      {
+        "sku": "HOT-12",
+        "name": "Hot sauce (case of 12)",
+        "quantity": 12,
+        "unit": "case",
+        "unit_price_minor": 500000
+      }
+    ],
+    "fulfilment": "delivery",
+    "note": "Deliver Friday"
+  },
+  "metadata": {
+    "idempotency_key": "whatsapp:msg_01",
+    "consent": {
+      "captured": true,
+      "purpose": "operational_record"
+    }
+  }
+}

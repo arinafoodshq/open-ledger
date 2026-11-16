@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1.0",
+  "id": "evt_payment_01",
+  "type": "payment.received",
+  "occurred_at": "2026-11-17T10:15:00Z",
+  "recorded_at": "2026-11-17T10:16:03Z",
+  "subject": {
+    "business_id": "biz_example",
+    "location_id": "loc_ikeja",
+    "business_name": "Example Foods"
+  },
+  "actor": {
+    "id": "staff_ada",
+    "type": "owner",
+    "name": "Ada"
+  },
+  "counterparty": {
+    "id": "cust_01",
+    "type": "customer",
+    "name": "Ada Okafor"
+  },
+  "source": {
+    "channel": "manual",
+    "evidence_id": "bank_alert_01"
+  },
+  "currency": "NGN",
+  "amount_minor": 6000000,
+  "payload": {
+    "payment_id": "pay_01",
+    "order_id": "ord_01",
+    "method": "bank_transfer",
+    "reference": "TRX-20261117-001"
+  },
+  "metadata": {
+    "idempotency_key": "bank:TRX-20261117-001"
+  }
+}

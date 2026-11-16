@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1.0",
+  "id": "evt_stock_out_01",
+  "type": "stock.sold",
+  "occurred_at": "2026-11-17T08:05:00Z",
+  "recorded_at": "2026-11-17T08:06:00Z",
+  "subject": {
+    "business_id": "biz_example",
+    "location_id": "loc_ikeja",
+    "business_name": "Example Foods"
+  },
+  "actor": {
+    "id": "staff_ada",
+    "type": "owner",
+    "name": "Ada"
+  },
+  "source": {
+    "channel": "whatsapp",
+    "evidence_id": "msg_01"
+  },
+  "payload": {
+    "order_id": "ord_01",
+    "items": [
+      {
+        "sku": "HOT-12",
+        "name": "Hot sauce (case of 12)",
+        "quantity": 12,
+        "unit": "case"
+      }
+    ]
+  },
+  "metadata": {
+    "idempotency_key": "stock-sold:ord_01"
+  }
+}
