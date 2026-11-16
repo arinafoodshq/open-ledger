@@ -29,6 +29,7 @@ are intended to stand on their own.
 | `EVALUATION.md` | Proposed extraction metrics and data-governance rules |
 | `GOVERNANCE.md` | Stewardship, versioning and contribution process |
 | `CONTRIBUTING.md` | How to propose changes and review the schema |
+| `TRADEMARKS.md` | What the licences do and do not grant for the TechAssembly name |
 | `scripts/validate.mjs` | Dependency-free smoke check for the examples |
 
 ## Scope for v0.1
@@ -76,8 +77,25 @@ standards-compliant validator to CI.
 
 ## Licence
 
-- Code and schema: MIT (`LICENSE`).
-- Documentation and specification text: CC BY 4.0 (`LICENSE-docs`).
+| Material | Licence |
+|---|---|
+| Code in `scripts/` and the JSON Schema in `schema/` | MIT (`LICENSE`) |
+| Documentation: `README.md`, `SPEC.md`, `EVALUATION.md`, `GOVERNANCE.md`, `CONTRIBUTING.md` | CC BY 4.0 (`LICENSE-docs`) |
+| Synthetic examples in `examples/` | CC BY 4.0 |
+
+The copyright holder is **TechAssembly Limited (RC 8505981)**. The project is
+maintained in public and is not controlled by a single vendor; the licences
+allow anyone to implement, fork or commercialise the work.
+
+**Patent note:** MIT does not include an express patent grant. This is a
+deliberate v0.1 choice. Before 1.0, the project can adopt Apache 2.0 for the
+code and schema if implementers need an express patent grant.
+
+**Trademarks:** the TechAssembly name and logo are not licensed by MIT or
+CC BY 4.0. See `TRADEMARKS.md`.
+
+**Dependencies:** the validator uses only Node.js built-ins. There are no
+third-party runtime dependencies to licence-check.
 
 ## Contributing
 

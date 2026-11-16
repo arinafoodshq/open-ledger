@@ -21,8 +21,11 @@ represent**. The second most valuable is an **independent implementation**.
 - Add or update a synthetic example in `examples/`.
 - Run `node scripts/validate.mjs`.
 - Sign off your commit with `Signed-off-by: Your Name <you@example.com>`.
+- By contributing, you agree that your contribution is licensed under the same
+  terms as the material you change: MIT for code and schema, CC BY 4.0 for
+  documentation and examples.
 - Do not add a dependency unless it is necessary to validate or demonstrate the
-  format.
+  format. If you do, state its licence and confirm it is compatible with MIT.
 
 ## What we will not accept
 
